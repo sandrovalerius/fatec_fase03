@@ -39,7 +39,39 @@
 				Teste Movimento
 			</div>
 		</article>
+		<article class="bgVermelho txtBranco borda-0 borda-r5 pd-10">
+			<h1>Sobre a aula</h1>
+			<p>
+				A definição das classes podem ser utilizadas concomitantemente desde que concorram com o mesmo atributo, o que significa não aplicar estilos semelhantes na mesma linha, se acontecer, o dom aplicará a informação mais recente.
+			</p>
+		</article>
 
+		<article class="bgAmarelo txtPreto borda-0 borda-r5 pd-10 mb-15">
+			<h1>Como criar variáveis no código CSS</h1>
+			<p>
+				Assim como nas liguangens de programação uma variável carrega um valor que pode ser recuperado em outro momento do programa.
+			</p>
+			<p>
+				Estruturas com o uso de variáveis são importantes quando sofrem interação do usuário, mas no caso do CSS, pode ser usado para padronização de estilos.
+			</p>
+			<p>
+				Define-se a variável numa área raiz (root) que será informada para o DOM dentro do estilo carregado. No caso do CSS as variáveis deve conter um prefixo de dois hifens (--) e após dois pontos, o valor a ser armazenado, encerrando a definição com ponto e virgula, como no exemplo abaixo:
+			</p>
+			<code>
+				:root {
+					--amarelo: #F9D423; 
+				 }
+			</code>
+		</article>
+		<article class="bgVerde txtPreto borda-0 borda-r5 pd-10 mb-15">
+			<h1>Como aplicar as variáveis no código CSS</h1>
+			<p>
+				Uma vez definido uma variável, na estrutura do CSS onde ela se aplica, basta usar a instrução "var" e o nome da variável entre parênteses. Veja o exemplo abaixo:
+			</p>
+			<code>
+				.bgAmarelo  {background-color: var(--amarelo);}
+			</code>
+		</article>
 	</div>
 
 	<br clear="all">
